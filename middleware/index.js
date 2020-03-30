@@ -14,7 +14,7 @@ module.exports = {
           console.log(err);
           req.flash('error', 'Sorry, that campground does not exist!');
           res.redirect('/campgrounds');
-      } else if(foundCampground.author.id.equals(req.user._id) || req.user.isAdmin){
+      } else if(foundCampground.author.id == req.user._id){
           req.campground = foundCampground;
           next();
       } else {
@@ -29,7 +29,7 @@ module.exports = {
            console.log(err);
            req.flash('error', 'Sorry, that comment does not exist!');
            res.redirect('/campgrounds');
-       } else if(foundComment.author.id.equals(req.user._id) || req.user.isAdmin){
+       } else if(foundComment.author.id == req.user._id){
             req.comment = foundComment;
             next();
        } else {
