@@ -10,23 +10,23 @@
     "start": "node app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Colt Steele",
+  "author": "HR",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.14.1",
+    "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
-    "cookie-parser": "^1.4.3",
+    "cookie-parser": "^1.4.5",
     "dotenv": "^4.0.0",
     "ejs": "^2.3.4",
-    "express": "^4.13.3",
-    "express-session": "^1.11.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
     "geocoder": "^0.2.2",
-    "method-override": "^2.3.5",
-    "moment": "^2.17.1",
-    "mongoose": "^4.11.9",
-    "passport": "^0.3.0",
+    "method-override": "^3.0.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.7",
+    "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "passport-local-mongoose": "^3.1.0",
+    "passport-local-mongoose": "^6.0.1",
     "request": "^2.65.0"
   }
 }
